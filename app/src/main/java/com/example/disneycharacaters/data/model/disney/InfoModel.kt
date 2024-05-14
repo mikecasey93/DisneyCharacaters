@@ -9,7 +9,7 @@ data class InfoModel(
     @SerializedName("nextPage")
     val nextPage: String? = "",
     @SerializedName("previousPage")
-    val previousPage: AnyModel? = AnyModel(),
+    val previousPage: String? = String(),
     @SerializedName("totalPages")
     val totalPages: Int? = 0
 )
