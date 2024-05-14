@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Disney Characaters</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="something_went_wrong_try_again">\n</string>
+    <string name="first_name_detail">\n</string>
+    <string name="last_name_detail" />
+    <string name="email_detail" />
 </resources>
