@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Disney"
+        android:id="@+id/disneyFragment"
+        android:icon="@drawable/people_icon"
+        />
+    <item android:title="DisneyOther"
+        android:id="@+id/disneyDetailFragment"
+        android:icon="@drawable/disney"
+        />
+</menu>
