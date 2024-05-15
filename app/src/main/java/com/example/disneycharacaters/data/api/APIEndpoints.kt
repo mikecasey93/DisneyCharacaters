@@ -7,4 +7,6 @@ import retrofit2.http.GET
 interface APIEndpoints {
     @GET(APIDetail.CHARACTER_ENDPOINT)
     suspend fun getCharacterList(): DisneyCharactersModel
+    @GET(APIDetail.CHARACTER_ENDPOINT)
+    suspend fun getVideoGames(): DisneyCharactersModel
 }
