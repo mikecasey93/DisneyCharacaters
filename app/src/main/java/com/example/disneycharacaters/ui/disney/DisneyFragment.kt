@@ -47,7 +47,10 @@ class DisneyFragment : Fragment() {
                             R.id.action_disneyFragment_to_disneyDetailFragment,
                             bundleOf(
                                 Pair("name",disneyItemModel?.name),
-                                Pair("profileImage",disneyItemModel?.imageUrl)
+                                Pair("profileImage",disneyItemModel?.imageUrl),
+                                Pair("sourceUrl",disneyItemModel?.sourceUrl),
+                                Pair("createdAt",disneyItemModel?.createdAt),
+                                Pair("updatedAt",disneyItemModel?.updatedAt),
 
                             )
                         )

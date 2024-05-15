@@ -20,6 +20,11 @@
         android:name="com.example.disneycharacaters.ui.detail.DisneyDetailFragment"
         android:label="fragment_people_detail"
         tools:layout="@layout/fragment_disney_detail" />
+    <fragment
+        android:id="@+id/disneyInfoFragment"
+        android:name="com.example.disneycharacaters.ui.disneygame.DisneyInfoFragment"
+        android:label="fragment_people_detail"
+        tools:layout="@layout/fragment_disney_info" />
 
 
 

@@ -6,7 +6,7 @@
         android:icon="@drawable/people_icon"
         />
     <item android:title="DisneyOther"
-        android:id="@+id/disneyDetailFragment"
-        android:icon="@drawable/disney"
+        android:id="@+id/disneyInfoFragment"
+        android:icon="@drawable/mickey"
         />
 </menu>

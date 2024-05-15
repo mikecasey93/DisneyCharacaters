@@ -1,18 +1,24 @@
-package com.example.disneycharacaters.ui.detail
+package com.example.disneycharacaters.ui.disneygame
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.example.disneycharacaters.R
+import com.example.disneycharacaters.databinding.FragmentDisneyBinding
 import com.example.disneycharacaters.databinding.FragmentDisneyDetailBinding
-import dagger.hilt.android.AndroidEntryPoint
+import com.example.disneycharacaters.databinding.FragmentDisneyInfoBinding
+import com.example.disneycharacters.ui.disney.DisneyInfoViewModel
+import com.example.virginmoney.ui.disney.DisneyAdapter
 
-@AndroidEntryPoint
-class DisneyDetailFragment : Fragment() {
 
+class DisneyInfoFragment : Fragment() {
     lateinit var binding: FragmentDisneyDetailBinding
 
 
