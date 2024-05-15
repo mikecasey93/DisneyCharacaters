@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/ivImage2"
         android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_height="150dp"
         tool:layout_constraintStart_toStartOf="parent"
         tool:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars"/>
@@ -19,32 +19,37 @@
         android:id="@+id/tvId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/ivImage2"
         android:layout_marginHorizontal="12dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/lemon_milk_bold"
         android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/ivImage2"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="" />
 
     <TextView
         android:id="@+id/tvCreatedAt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/ivImage2"
         android:layout_marginHorizontal="12dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintTop_toBottomOf="@id/tvId"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
         android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/ivImage2"
+        app:layout_constraintTop_toBottomOf="@id/tvId"
         tools:text="" />
 
     <TextView
         android:id="@+id/tvUpdatedAt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/ivImage2"
         android:layout_marginHorizontal="12dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="4dp"
-        app:layout_constraintTop_toBottomOf="@id/tvCreatedAt"
         android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/ivImage2"
+        app:layout_constraintTop_toBottomOf="@id/tvCreatedAt"
         tools:text="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

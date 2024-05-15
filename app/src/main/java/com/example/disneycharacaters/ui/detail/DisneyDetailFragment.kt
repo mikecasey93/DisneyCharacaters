@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
 import com.example.disneycharacaters.R
 import com.example.disneycharacaters.databinding.FragmentDisneyDetailBinding
@@ -36,7 +37,13 @@ class DisneyDetailFragment : Fragment() {
             update.text = "Updated At: ${updatedAt}"
             Glide.with(requireContext()).load(profileImage).into(profileImageDetail)
 
+            binding.button.setOnClickListener {
+                Navigation.findNavController(it).navigate(R.id.action_disneyDetailFragment_to_disneyFragment)
+
+            }
+
         }
+
 
 
         return binding.root

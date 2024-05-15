@@ -38,6 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileImageDetail" />
+
     <TextView
         android:id="@+id/create"
         android:layout_width="0dp"
@@ -45,8 +46,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/lemon_milk_bold"
-        android:maxLines="5"
         android:gravity="center"
+        android:maxLines="5"
         android:text="@string/random"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -54,6 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstNameDetail" />
+
     <TextView
         android:id="@+id/update"
         android:layout_width="0dp"
@@ -61,8 +63,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/lemon_milk_bold"
-        android:maxLines="5"
         android:gravity="center"
+        android:maxLines="5"
         android:text="@string/random"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -78,8 +80,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:fontFamily="@font/lemon_milk_bold"
-        android:maxLines="5"
         android:gravity="center"
+        android:maxLines="5"
         android:text="@string/random"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -87,6 +89,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="568dp"
+        android:gravity="center"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="@+id/profileImageDetail"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
