@@ -24,10 +24,16 @@ class DisneyDetailFragment : Fragment() {
 
         // Inflate the layout for this fragment
         val name = arguments?.getString("name")
+        val source = arguments?.getString("sourceUrl")
         val profileImage = arguments?.getString("profileImage")
+        val createdAt = arguments?.getString("createdAt")
+        val updatedAt = arguments?.getString("updatedAt")
 
         binding.apply {
             firstNameDetail.text = name
+            sourceUrl.text = source
+            create.text = "Created At: ${createdAt}"
+            update.text = "Updated At: ${updatedAt}"
             Glide.with(requireContext()).load(profileImage).into(profileImageDetail)
 
         }

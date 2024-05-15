@@ -9,14 +9,13 @@
     tools:context=".ui.detail.DisneyDetailFragment">
 
 
-
-
     <ImageView
 
         android:id="@+id/profileImageDetail"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="30dp"
+        android:foregroundGravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,18 +25,68 @@
     <TextView
         android:id="@+id/firstNameDetail"
         android:layout_width="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="wrap_content"
-        android:maxLines="5"
-        android:textStyle="bold"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:textColor="@color/white"
+        android:fontFamily="@font/lemon_milk_bold"
+        android:gravity="center"
+        android:maxLines="5"
         android:text="@string/first_name_detail"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileImageDetail" />
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lemon_milk_bold"
+        android:maxLines="5"
+        android:gravity="center"
+        android:text="@string/random"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameDetail" />
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lemon_milk_bold"
+        android:maxLines="5"
+        android:gravity="center"
+        android:text="@string/random"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create" />
 
-
+    <TextView
+        android:id="@+id/sourceUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lemon_milk_bold"
+        android:maxLines="5"
+        android:gravity="center"
+        android:text="@string/random"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,9 @@ class DisneyAdapter(
                 Glide.with(itemView.context).load(dataModel?.imageUrl)
                     .placeholder(R.drawable.people_icon)
                     .into(ivDisney)
-                tvDisneyName.text = "Name: ${dataModel?.name}"
+                tvDisneyName.text = "${dataModel?.name}"
+
+
 
             }
         }

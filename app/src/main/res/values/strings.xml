@@ -6,4 +6,5 @@
     <string name="first_name_detail">\n</string>
     <string name="last_name_detail" />
     <string name="email_detail" />
+    <string name="random">Random</string>
 </resources>

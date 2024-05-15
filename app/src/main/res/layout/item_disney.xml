@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/ivDisney"
@@ -19,51 +18,21 @@
     <TextView
         android:id="@+id/tvDisneyName"
 
-        android:layout_height="wrap_content"
         android:layout_width="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:maxLines="4"
-        android:layout_marginStart="12dp"
-        android:textColor="@color/black"
-        app:layout_constraintBaseline_toBaselineOf="@+id/tvLastName"
-        app:layout_constraintStart_toEndOf="@+id/ivDisney"
-        tools:text="First Name" />
-
-    <TextView
-        android:id="@+id/tvLastName"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="36dp"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/tvDisneyName"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Last Name" />
-
-    <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="12dp"
-        android:layout_marginTop="12dp"
-        android:textColor="@color/black"
-        android:maxLines="4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
+        android:maxLines="2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivDisney"
-        app:layout_constraintTop_toBottomOf="@+id/tvDisneyName"
-        tools:text="Email" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503"
+        tools:text="First Name"
+        android:fontFamily="@font/lemon_milk_bold"
+        android:textSize="18sp"
 
-    <TextView
-        android:id="@+id/tvJobTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:textColor="@color/black"
-        android:maxLines="4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvEmail"
-        app:layout_constraintTop_toBottomOf="@+id/tvEmail"
-        tools:text="Job Title" />
+
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
