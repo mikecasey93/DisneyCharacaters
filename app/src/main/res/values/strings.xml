@@ -7,4 +7,5 @@
     <string name="last_name_detail" />
     <string name="email_detail" />
     <string name="random">Random</string>
+    <string name="test">test</string>
 </resources>

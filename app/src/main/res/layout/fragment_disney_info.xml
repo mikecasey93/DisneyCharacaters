@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/disneyGameFragment"
-    tools:context=".ui.disneygame.DisneyGameFragment">
+    android:id="@+id/disneyInfoFragment"
+    tools:context=".ui.disneygame.DisneyInfoFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

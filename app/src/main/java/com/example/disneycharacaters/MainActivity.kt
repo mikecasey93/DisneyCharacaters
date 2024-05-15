@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigation.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.disneyFragment -> navController.navigate(R.id.disneyFragment)
-                R.id.disneyGameFragment -> navController.navigate(R.id.disneyGameFragment)
+                R.id.disneyInfoFragment -> navController.navigate(R.id.disneyInfoFragment)
                 else -> {
                 }
             }
