@@ -14,4 +14,8 @@ class RepositoryImplementaion @Inject constructor(
         return apiDetail.getCharacterList()
     }
 
+    override suspend fun getVideoGames(): DisneyCharactersModel {
+        return apiDetail.getVideoGames()
+    }
+
 }

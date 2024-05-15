@@ -7,4 +7,5 @@ import retrofit2.http.GET
 
 interface Repoistory {
     suspend fun getCharacterList(): DisneyCharactersModel
+    suspend fun getVideoGames(): DisneyCharactersModel
 }
