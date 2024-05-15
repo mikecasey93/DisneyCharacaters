@@ -1,6 +1,7 @@
 package com.example.disneycharacaters
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -29,7 +30,16 @@ class MainActivity : AppCompatActivity() {
                 else -> {
                 }
             }
+
             true
+        }
+        navController.addOnDestinationChangedListener{_,destingation,_->
+            if(destingation.id==R.id.disneyDetailFragment){
+                binding.bottomNavigation.visibility = View.GONE
+            }
+            else{
+                binding.bottomNavigation.visibility = View.VISIBLE
+            }
         }
 
 
