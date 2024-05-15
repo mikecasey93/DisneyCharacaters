@@ -61,7 +61,21 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
     implementation("androidx.navigation:navigation-dynamic-features-fragment:2.3.5")
 
+    // Retrofit -> network
+    implementation(libs.retrofit)
 
+    // OkHttp
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+
+    // Glide
+    implementation(libs.glide)
+
+    // Gson
+    implementation(libs.gson)
+    implementation(libs.converter.gson)
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0")
     // Hilt
     //
     implementation("com.google.dagger:hilt-android:2.51.1")

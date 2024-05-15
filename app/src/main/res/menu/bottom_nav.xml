@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Characters"
+        android:id="@+id/itemCharacters"
+        android:icon="@drawable/baseline_person_24" />
+    <item android:title="Info"
+        android:id="@+id/itemGames"
+        android:icon="@drawable/baseline_games_24" />
+</menu>

@@ -1,4 +1,4 @@
-package com.example.disneycharacaters.data
+package com.example.disneycharacaters.data.api
 
 object ApiDetails {
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemCharacters">
+
+    <fragment
+        android:id="@+id/itemCharacters"
+        android:name="com.example.disneycharacaters.ui.character.CharacterFragment"
+        android:label="fragment_character"
+        tools:layout="@layout/fragment_character" />
+    <fragment
+        android:id="@+id/itemGames"
+        android:name="com.example.disneycharacaters.ui.info.InfoFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_info" />
+</navigation>
