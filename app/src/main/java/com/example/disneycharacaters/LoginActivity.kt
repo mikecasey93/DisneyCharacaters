@@ -49,6 +49,7 @@ class LoginActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email,password).addOnCompleteListener{
                     if(it.isSuccessful){
                         startActivity(Intent(this,MainActivity::class.java))
+                        finish()
                     }
                 }.addOnFailureListener{
                     Toast.makeText(this,it.localizedMessage,Toast.LENGTH_LONG).show()
