@@ -52,6 +52,7 @@ class LoginActivity : AppCompatActivity() {
         binding.btnGoogle.setOnClickListener {
             googleSignInClient.signOut()
             startActivityForResult(googleSignInClient.signInIntent, 13)
+            
 
 
         }
