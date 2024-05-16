@@ -12,6 +12,7 @@ import androidx.navigation.fragment.NavHostFragment
 import com.example.disneycharacaters.databinding.ActivityMainBinding
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -25,8 +26,11 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
+//Firebase Analytics setup.
         firebaseAnalytics = Firebase.analytics
+        LoginActivity.auth = FirebaseAuth.getInstance()
+
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -53,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-        //crash analytics
+        //crash analytics to test
 //        val crashButton = Button(this)
 //        crashButton.text = "Test Crash"
 //        crashButton.setOnClickListener {
