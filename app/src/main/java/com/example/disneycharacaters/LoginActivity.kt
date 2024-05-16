@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.disneycharacaters.databinding.ActivityLoginBinding
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
@@ -24,9 +26,22 @@ class LoginActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
+//google SignIn
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.client_id))
+            .requestEmail()
+            .build()
+        val googleSignInClient = GoogleSignIn.getClient(this, gso)
+
+
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Code Given by Google
+
+
+
+        //email Verification with logic
         binding.btnLogin.setOnClickListener{
             val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
@@ -39,6 +54,16 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(this,it.localizedMessage,Toast.LENGTH_LONG).show()
                 }
         }
+
+        binding.btnGoogle.setOnClickListener{
+            googleSignInClient.signOut()
+            startActivityForResult(googleSignInClient.signInIntent, 13)
+
+
+
+        }
+
+
 
         }
 
