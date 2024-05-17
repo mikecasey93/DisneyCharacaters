@@ -52,14 +52,15 @@ class LoginActivity : AppCompatActivity() {
         binding.btnGoogle.setOnClickListener {
             googleSignInClient.signOut()
             startActivityForResult(googleSignInClient.signInIntent, 13)
-            
 
 
         }
     }
+
     private fun toMain() {
         startActivity(Intent(this, MainActivity::class.java))
         finish()
+
     }
 
     private fun isVerifiedUser() {

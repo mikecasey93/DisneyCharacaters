@@ -29,6 +29,11 @@
         android:name="com.example.disneycharacaters.ui.info.InfoFragment"
         android:label="fragment_people_detail"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/logOutFragment"
+        android:name="com.example.disneycharacaters.ui.logout.LogOutFragment"
+        android:label="log_out"
+        tools:layout="@layout/fragment_log_out" />
 
 
 

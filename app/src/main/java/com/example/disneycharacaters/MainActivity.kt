@@ -1,5 +1,6 @@
 package com.example.disneycharacaters
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
@@ -25,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
 
-
 //Firebase Analytics setup.
         firebaseAnalytics = Firebase.analytics
         LoginActivity.auth = FirebaseAuth.getInstance()
@@ -42,22 +42,24 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId) {
                 R.id.disneyFragment -> navController.navigate(R.id.disneyFragment)
                 R.id.disneyInfoFragment -> navController.navigate(R.id.disneyInfoFragment)
+                R.id.logout -> navController.navigate((R.id.logOutFragment))
                 else -> {
                 }
             }
 
             true
         }
-        navController.addOnDestinationChangedListener{_,destingation,_->
-            if(destingation.id==R.id.disneyDetailFragment){
+        navController.addOnDestinationChangedListener { _, destingation, _ ->
+            if (destingation.id == R.id.disneyDetailFragment) {
                 binding.bottomNavigation.visibility = View.GONE
-            }
-            else{
+            } else {
                 binding.bottomNavigation.visibility = View.VISIBLE
             }
 
+
         }
-        //crash analytics to test
+
+
 //        val crashButton = Button(this)
 //        crashButton.text = "Test Crash"
 //        crashButton.setOnClickListener {
@@ -67,8 +69,6 @@ class MainActivity : AppCompatActivity() {
 //        addContentView(crashButton, ViewGroup.LayoutParams(
 //            ViewGroup.LayoutParams.MATCH_PARENT,
 //            ViewGroup.LayoutParams.WRAP_CONTENT))
-
-
 
 
     }
