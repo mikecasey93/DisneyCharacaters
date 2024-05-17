@@ -24,7 +24,6 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         auth = FirebaseAuth.getInstance()
 
         //google SignIn old that was given by google
@@ -38,12 +37,9 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         //email Verification with logic
         binding.btnLogin.setOnClickListener {
             isVerifiedUser()
-
-
         }
         binding.btnWithoutLogin.setOnClickListener {
             toMain()
@@ -52,7 +48,6 @@ class LoginActivity : AppCompatActivity() {
         binding.btnGoogle.setOnClickListener {
             googleSignInClient.signOut()
             startActivityForResult(googleSignInClient.signInIntent, 13)
-
 
         }
     }
@@ -75,8 +70,5 @@ class LoginActivity : AppCompatActivity() {
             }.addOnFailureListener {
                 Toast.makeText(this, it.localizedMessage, Toast.LENGTH_LONG).show()
             }
-
     }
-
-
 }

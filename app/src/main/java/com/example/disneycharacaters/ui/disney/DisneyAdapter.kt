@@ -28,9 +28,6 @@ class DisneyAdapter(
                     .placeholder(R.drawable.people_icon)
                     .into(ivDisney)
                 tvDisneyName.text = "${dataModel?.name}"
-
-
-
             }
         }
 

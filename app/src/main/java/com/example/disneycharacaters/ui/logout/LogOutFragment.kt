@@ -15,6 +15,8 @@ class LogOutFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         FirebaseAuth.getInstance().signOut()
         startActivity(Intent(activity, LoginActivity::class.java)).also { activity?.finish()
         }
