@@ -35,24 +35,24 @@ class DisneyFragment : Fragment() {
 
 
 
-        binding.apply{
+        binding.apply {
 //
 //
 //            }
-            disneyViewModel.disneyList.observe(viewLifecycleOwner){
+            disneyViewModel.disneyList.observe(viewLifecycleOwner) {
                 rvDisney.apply {
                     layoutManager = LinearLayoutManager(context)
-                    adapter = DisneyAdapter(it.data) {disneyItemModel ->
+                    adapter = DisneyAdapter(it.data) { disneyItemModel ->
                         findNavController().navigate(
                             R.id.action_disneyFragment_to_disneyDetailFragment,
                             bundleOf(
-                                Pair("name",disneyItemModel?.name),
-                                Pair("profileImage",disneyItemModel?.imageUrl),
-                                Pair("sourceUrl",disneyItemModel?.sourceUrl),
-                                Pair("createdAt",disneyItemModel?.createdAt),
-                                Pair("updatedAt",disneyItemModel?.updatedAt),
+                                Pair("name", disneyItemModel?.name),
+                                Pair("profileImage", disneyItemModel?.imageUrl),
+                                Pair("sourceUrl", disneyItemModel?.sourceUrl),
+                                Pair("createdAt", disneyItemModel?.createdAt),
+                                Pair("updatedAt", disneyItemModel?.updatedAt),
 
-                            )
+                                )
                         )
 
                     }

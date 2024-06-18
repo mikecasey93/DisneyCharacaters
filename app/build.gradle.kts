@@ -1,13 +1,14 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    //alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.android.application")
+
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
     id("com.google.gms.google-services")
     id("com.google.firebase.crashlytics")
 
 }
-
 android {
     namespace = "com.example.disneycharacaters"
     compileSdk = 34
@@ -57,14 +58,20 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
+
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     implementation("com.google.code.gson:gson:2.10.1")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
     implementation("com.github.bumptech.glide:glide:4.16.0")
+
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
     implementation("androidx.navigation:navigation-dynamic-features-fragment:2.3.5")
+
+
 
 
     // Hilt
